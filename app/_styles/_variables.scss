@@ -1,0 +1,49 @@
+$font-heading: stolz;
+$font-text: akayakanadaka;
+$akwaaba: soka;
+
+$color-M-50: #ecfbff;
+$color-M-100: #d4f4ff;
+$color-M-200: #b3edff;
+$color-M-300: #7fe4ff;
+$color-M-400: #43d1ff;
+$color-M-500: #18b4ff;
+$color-M-600: #0095ff;
+$color-M-700: #007cfb;
+$color-M-800: #036ddd;
+$color-M-900: #0a559e;
+$color-M-950: #0c345f;
+$color-M-1000: #042242;
+$color-BG-0: #fcfeff;
+$color-html: #ff5733;
+$color-css: #264de4;
+$color-figma: #a259ff;
+$color-front-end: #ff5ca0;
+$color-node-js: #5fa04e;
+$color-javascript: #f0db4f;
+$color-sass: #cc6699;
+
+$radius-small: 0.5rem;
+$radius-normal: 0.7rem;
+$radius-medium: 1rem;
+$radius-big: 1.5rem;
+
+@mixin glass-gradient {
+  background: linear-gradient(to bottom left, rgba(179, 237, 255, 0.15), rgba(4, 34, 66, 0));
+  backdrop-filter: blur(10px);
+  max-width: 900px;
+
+  position: relative;
+  // transform: translateX(-50%);
+  // left: 50%;
+}
+
+@mixin glass-gradient-to-top {
+  border-left: 1px solid rgba(179, 237, 255, 0.1);
+  border-bottom: 1px solid rgba(179, 237, 255, 0.01);
+  border-top: 1px solid rgba(4, 34, 66, 0.1);
+}
+@mixin glass-gradient-to-bottom {
+  border-left: 1px solid rgba(179, 237, 255, 0.1);
+  border-bottom: 1px solid rgba(4, 34, 66, 0.1);
+}

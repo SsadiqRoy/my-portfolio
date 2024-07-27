@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  appearance: none;
+}
+
+html {
+  font-family: $font-text;
+  color: $color-M-1000;
+  background-color: $color-M-50;
+  font-size: 10px;
+
+  @media (max-width: 900px) {
+    font-size: 9px;
+  }
+  @media (max-width: 600px) {
+    font-size: 8px;
+  }
+}
+
+body {
+  font-size: 1.7rem;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}

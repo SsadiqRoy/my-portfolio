@@ -1,0 +1,95 @@
+.second-info {
+  background-color: $color-M-1000;
+  padding-inline: 2rem;
+  // padding-bottom: 4rem;
+  margin-bottom: 50rem;
+
+  position: relative;
+}
+
+.skillset {
+  @include glass-gradient;
+  @include glass-gradient-to-top;
+  padding: 5rem 4rem;
+  border-radius: $radius-medium;
+
+  top: -5rem;
+
+  .stack-container {
+    margin-top: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .stack-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    // margin-bottom: 2rem;
+  }
+
+  .color-html {
+    color: $color-html;
+  }
+  .color-figma {
+    color: $color-figma;
+  }
+  .color-css {
+    color: $color-css;
+  }
+  .color-sass {
+    color: $color-sass;
+  }
+  .color-javascript {
+    color: $color-javascript;
+  }
+  .color-front-end {
+    color: $color-front-end;
+  }
+  .color-node-js {
+    color: $color-node-js;
+  }
+  .color-react {
+    color: $color-M-400;
+  }
+  .color-next-js {
+    color: black;
+  }
+  .color-sql {
+    color: #ecaa2f96;
+  }
+  .color-tailwind {
+    color: $color-M-700;
+  }
+
+  .stack-item {
+    padding: 0.5rem 1rem;
+    background-color: $color-M-50;
+    border-radius: $radius-small;
+    text-transform: capitalize;
+
+    display: flex;
+    gap: 0.5rem;
+    align-items: top;
+
+    &-logo {
+      font-size: 1.2em;
+    }
+  }
+}
+
+.portfolio {
+  padding-block: 30rem;
+  border: 1px solid salmon;
+}
+
+.message {
+  @include glass-gradient;
+  @include glass-gradient-to-bottom;
+  padding: 13rem 4rem;
+  border-radius: $radius-medium;
+
+  top: 10rem;
+}
