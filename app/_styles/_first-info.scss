@@ -2,13 +2,27 @@
   padding: 7rem 2rem;
 }
 
-.akwaaba {
+.akwaaba,
+.what-i-do {
   display: grid;
   gap: 6rem;
   grid-template-columns: 1fr 1fr;
 
   padding-block: 8rem;
 
+  position: relative;
+  top: 5rem;
+  opacity: 0;
+  transition: all 1s ease-out;
+
+  @media (max-width: $w-700) {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+.akwaaba {
   &-left {
     display: flex;
     flex-direction: column;
@@ -26,20 +40,31 @@
       gap: 2.3rem;
     }
   }
+
+  &-right {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
 }
 
 .what-i-do {
-  display: grid;
-  gap: 6rem;
-  grid-template-columns: 1fr 1fr;
-
-  padding-block: 8rem;
+  @media (max-width: $w-700) {
+    flex-direction: column-reverse;
+  }
 
   &-left {
     display: flex;
     align-items: center;
 
     padding-block: 4rem;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
   }
 
   &-right {

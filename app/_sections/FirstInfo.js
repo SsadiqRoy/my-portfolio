@@ -1,11 +1,12 @@
 import CareerCards from '../_components/CareerCards';
+import { Akwaaba, WhatIDo } from '../_components/FirstInfoAssist';
 
 /* eslint-disable @next/next/no-img-element */
 function FirstInfo() {
   return (
     <section className="first-info">
       <div className="content">
-        <div className="akwaaba">
+        <Akwaaba>
           <div className="akwaaba-left">
             <h2>Akwaaba 👋</h2>
 
@@ -25,9 +26,9 @@ function FirstInfo() {
           <div className="akwaaba-right">
             <img src="akwaaba.svg" alt="Greetings" />
           </div>
-        </div>
+        </Akwaaba>
 
-        <div className="what-i-do">
+        <WhatIDo>
           <div className="what-i-do-left">
             <img src="webs-n-code.svg" alt="Greetings" />
           </div>
@@ -39,7 +40,7 @@ function FirstInfo() {
               <CareerCards />
             </div>
           </div>
-        </div>
+        </WhatIDo>
       </div>
     </section>
   );

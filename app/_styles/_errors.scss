@@ -1,0 +1,26 @@
+.error {
+  position: absolute;
+  inset: 0;
+  background-color: $color-M-1000;
+  padding: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-box {
+    padding: 4rem 2rem;
+    background-color: $color-M-100;
+    color: $color-M-1000;
+    border-radius: $radius-medium;
+    box-shadow: $box-shadow;
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+
+    h1 {
+      font-family: $font-heading;
+      margin-bottom: 4rem;
+    }
+  }
+}

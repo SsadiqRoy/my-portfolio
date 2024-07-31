@@ -39,7 +39,7 @@ function Hero() {
 
           <div className="copy-button">
             <a href="mailto:samuelmadebombe@gmail.com" className="btn-primary">
-              let&apos;s talk
+              talk to me
             </a>
           </div>
         </div>

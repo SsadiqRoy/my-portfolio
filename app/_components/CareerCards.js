@@ -11,19 +11,19 @@ function CareerCards() {
       <CareerCard title="Front-End development" openId={openId} setOpenId={setOpenId} id="front">
         I build modern, scalable user interfaces with <strong>React, Javascript, HTML, CSS, NextJs</strong>,
         implementing responsive layouts, interactive elements and functionality to web applications ensuring great looks
-        and a seamless user experience across devices
+        and a seamless user experience across devices.
       </CareerCard>
 
       <CareerCard title="back-End development" openId={openId} setOpenId={setOpenId} id="back">
-        I focus on building robust, efficient and scalale server-side applications and <strong>RESTful APIs</strong>{' '}
-        that power seamless and high performance web expreience with <strong>NodeJs, Express, Mongodb</strong> and{' '}
-        <strong>SQL</strong>
+        I focus on building robust, efficient and scalale server-side applications and <strong>RESTful APIs </strong>
+        that power seamless and high performance web expreience with <strong>NodeJs, Express, Mongodb</strong> and
+        <strong> SQL</strong>.
       </CareerCard>
 
       <CareerCard title="UI/UX designing" openId={openId} setOpenId={setOpenId} id="ui/ux">
-        I build modern, scalable user interfaces with react, javascript, HTML, CSS, NextJs ,implementing, responsive
-        layouts, interactive elements and functionality to web applications ensuring great looks and a seamless user
-        experience across devices
+        I transform complex ideas into seamless user experience, creating flows that guide users effortlessly through
+        your product enhancing usability and satisfaction. <br /> <br />I creatively design clean, visually appealing
+        modern interfaces with harmonious and great looks.
       </CareerCard>
     </>
   );

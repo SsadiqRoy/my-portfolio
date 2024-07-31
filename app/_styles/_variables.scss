@@ -28,22 +28,358 @@ $radius-normal: 0.7rem;
 $radius-medium: 1rem;
 $radius-big: 1.5rem;
 
+$w-500: 31.25em;
+$w-600: 37.5em;
+$w-700: 43.75em;
+
+$box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.05);
+
 @mixin glass-gradient {
-  background: linear-gradient(to bottom left, rgba(179, 237, 255, 0.15), rgba(4, 34, 66, 0));
+  --x: 90%;
+  --y: 10%;
+  background-image: radial-gradient(circle at var(--x) var(--y), rgba(179, 237, 255, 0.15), rgba(4, 34, 66, 0.05));
   backdrop-filter: blur(10px);
   max-width: 900px;
+  background-attachment: fixed;
 
   position: relative;
-  // transform: translateX(-50%);
-  // left: 50%;
+  overflow: hidden;
+  transition: background-image 1s ease;
+
+  &::after {
+    content: '';
+    border-radius: inherit;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 2px;
+  }
 }
 
-@mixin glass-gradient-to-top {
+@mixin glass-gradient-skillset {
   border-left: 1px solid rgba(179, 237, 255, 0.1);
   border-bottom: 1px solid rgba(179, 237, 255, 0.01);
   border-top: 1px solid rgba(4, 34, 66, 0.1);
+
+  &::after {
+    animation: moveBorderSkillset 10s linear infinite;
+  }
 }
-@mixin glass-gradient-to-bottom {
+@mixin glass-gradient-cta {
   border-left: 1px solid rgba(179, 237, 255, 0.1);
   border-bottom: 1px solid rgba(4, 34, 66, 0.1);
+
+  &::after {
+    animation: moveBorderCTA 10s 2.5s linear infinite;
+  }
+}
+
+@keyframes moveBorderSkillset {
+  0% {
+    // choosing a position, height and width
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 2px;
+    background: linear-gradient(to right, rgba(4, 34, 66, 0.1), rgba(179, 237, 255));
+  }
+  10% {
+    // increasing width while maintianing position
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  12% {
+    // changing position while maintianng width
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    left: unset;
+    top: unset;
+    background: linear-gradient(to right, rgba(4, 34, 66, 0.1), rgba(179, 237, 255));
+  }
+  22% {
+    // reducing width while maintaining position and gradient
+    width: 2px;
+    right: 0;
+    bottom: 0;
+    left: unset;
+    top: unset;
+    background: linear-gradient(to right, rgba(4, 34, 66, 0.1), rgba(179, 237, 255));
+  }
+  25% {
+    // changing gradient while maintaining width and position
+    height: 2px;
+    width: 2px;
+    right: 0;
+    bottom: 0;
+    left: unset;
+    top: unset;
+    background: linear-gradient(to top, rgba(4, 34, 66, 0.1), rgba(179, 237, 255));
+  }
+  35% {
+    // increasing height while maintianing position & gradient
+
+    width: 2px;
+    right: 0;
+    bottom: 0;
+    left: unset;
+    top: unset;
+    height: 100%;
+  }
+  38% {
+    // changing position while maintianing height & gradient
+
+    width: 2px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    left: unset;
+    bottom: unset;
+  }
+  48% {
+    //reducing height while maintaining position & gradient
+    width: 2px;
+    height: 2px;
+    right: 0;
+    top: 0;
+    left: unset;
+    bottom: unset;
+    background: linear-gradient(to top, rgba(4, 34, 66, 0.1), rgba(179, 237, 255));
+  }
+  51% {
+    // changing gradient while maintianing position & height
+    width: 2px;
+    height: 2px;
+    right: 0;
+    top: 0;
+    left: unset;
+    bottom: unset;
+    background: linear-gradient(to right, rgba(4, 34, 66), rgba(179, 237, 255, 0.1));
+  }
+  61% {
+    // increasing width while maintianing gradient & position
+    width: 100%;
+    height: 2px;
+    right: 0;
+    top: 0;
+    left: unset;
+    bottom: unset;
+    background: linear-gradient(to right, rgba(4, 34, 66), rgba(179, 237, 255, 0.1));
+  }
+  64% {
+    // changing position while maintaining width and gradient
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: 0;
+    bottom: unset;
+    right: unset;
+    background: linear-gradient(to right, rgba(4, 34, 66), rgba(179, 237, 255, 0.1));
+  }
+  74% {
+    // reducing width while maintaing position and gradient
+    width: 2px;
+    height: 2px;
+    top: 0;
+    left: 0;
+    bottom: unset;
+    right: unset;
+    background: linear-gradient(to right, rgba(4, 34, 66), rgba(179, 237, 255, 0.1));
+  }
+  77% {
+    // maintaing width and position while changing gradient
+    width: 2px;
+    height: 2px;
+    top: 0;
+    left: 0;
+    bottom: unset;
+    right: unset;
+    background: linear-gradient(to bottom, rgba(4, 34, 66, 0.1), rgba(179, 237, 255));
+  }
+  87% {
+    // increasing height while maintaing position and gradient
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: unset;
+    right: unset;
+    background: linear-gradient(to bottom, rgba(4, 34, 66, 0.1), rgba(179, 237, 255));
+  }
+  90% {
+    // changing position while maintianing height gradient
+    width: 2px;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    top: unset;
+    right: unset;
+    background: linear-gradient(to bottom, rgba(4, 34, 66, 0.1), rgba(179, 237, 255));
+  }
+  100% {
+    // reducing height while maintaining the gradient
+    width: 2px;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    top: unset;
+    right: unset;
+    background: linear-gradient(to bottom, rgba(4, 34, 66, 0.1), rgba(179, 237, 255));
+  }
+}
+
+@keyframes moveBorderCTA {
+  0% {
+    // choosing a position, height and width
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 2px;
+    background: linear-gradient(to right, rgba(179, 237, 255, 0.1), rgba(4, 34, 66));
+  }
+  10% {
+    // increasing width while maintianing position & gradient
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  12% {
+    // changing position while maintianng width & gradient
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    left: unset;
+    top: unset;
+    background: linear-gradient(to right, rgba(179, 237, 255, 0.1), rgba(4, 34, 66));
+  }
+  22% {
+    // reducing width while maintaining position and gradient
+    width: 2px;
+    right: 0;
+    bottom: 0;
+    left: unset;
+    top: unset;
+    background: linear-gradient(to right, rgba(4, 34, 66, 0.1), rgba(179, 237, 255));
+  }
+  25% {
+    // changing gradient while maintaining width and position
+    height: 2px;
+    width: 2px;
+    right: 0;
+    bottom: 0;
+    left: unset;
+    top: unset;
+    background: linear-gradient(to top, rgba(4, 34, 66, 0.1), rgba(179, 237, 255));
+  }
+  35% {
+    // increasing height while maintianing position & gradient
+    width: 2px;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    left: unset;
+    top: unset;
+  }
+  38% {
+    // changing position while maintianing height & gradient
+    width: 2px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    left: unset;
+    bottom: unset;
+  }
+  48% {
+    //reducing height while maintaining position & gradient
+    width: 2px;
+    height: 2px;
+    right: 0;
+    top: 0;
+    left: unset;
+    bottom: unset;
+    background: linear-gradient(to top, rgba(4, 34, 66, 0.1), rgba(179, 237, 255));
+  }
+  51% {
+    // changing gradient while maintianing position & height
+    width: 2px;
+    height: 2px;
+    right: 0;
+    top: 0;
+    left: unset;
+    bottom: unset;
+    background: linear-gradient(to left, rgba(4, 34, 66, 0.1), rgba(179, 237, 255));
+  }
+  61% {
+    // increasing width while maintianing gradient & position
+    width: 100%;
+    height: 2px;
+    right: 0;
+    top: 0;
+    left: unset;
+    bottom: unset;
+    background: linear-gradient(to left, rgba(4, 34, 66, 0.1), rgba(179, 237, 255));
+  }
+  64% {
+    // changing position while maintaining width and gradient
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: 0;
+    bottom: unset;
+    right: unset;
+    background: linear-gradient(to left, rgba(4, 34, 66, 0.1), rgba(179, 237, 255));
+  }
+  74% {
+    // reducing width while maintaing position and gradient
+    width: 2px;
+    height: 2px;
+    top: 0;
+    left: 0;
+    bottom: unset;
+    right: unset;
+    background: linear-gradient(to left, rgba(4, 34, 66, 0.1), rgba(179, 237, 255));
+  }
+  77% {
+    // changing gradient while maintaing width and position
+    width: 2px;
+    height: 2px;
+    top: 0;
+    left: 0;
+    bottom: unset;
+    right: unset;
+    background: linear-gradient(to bottom, rgba(4, 34, 66, 0.1), rgba(179, 237, 255));
+  }
+  87% {
+    // increasing height while maintaing position and gradient
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: unset;
+    right: unset;
+    background: linear-gradient(to bottom, rgba(4, 34, 66, 0.1), rgba(179, 237, 255));
+  }
+  90% {
+    // changing position while maintianing height gradient
+    width: 2px;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    top: unset;
+    right: unset;
+    background: linear-gradient(to bottom, rgba(4, 34, 66, 0.1), rgba(179, 237, 255));
+  }
+  100% {
+    // reducing height while maintaining the gradient
+    width: 2px;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    top: unset;
+    right: unset;
+    background: linear-gradient(to bottom, rgba(4, 34, 66, 0.1), rgba(179, 237, 255));
+  }
 }

@@ -64,8 +64,8 @@
     justify-content: space-around;
     align-items: center;
 
-    @media (max-width: 37.5em) {
-      font-size: 2rem;
+    @media (max-width: $w-600) {
+      font-size: 3rem;
     }
 
     h1 {
@@ -77,10 +77,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 4rem;
+        gap: 1rem 4rem;
 
         > * {
           transform: scale(0);
+          // border: 1px solid salmon;
         }
 
         & > :nth-child(1) {

@@ -2,14 +2,17 @@
   background-color: $color-M-1000;
   padding-inline: 2rem;
   // padding-bottom: 4rem;
-  margin-bottom: 50rem;
+  // margin-bottom: 50rem;
 
   position: relative;
 }
 
-.skillset {
+.glass {
   @include glass-gradient;
-  @include glass-gradient-to-top;
+}
+
+.skillset {
+  @include glass-gradient-skillset;
   padding: 5rem 4rem;
   border-radius: $radius-medium;
 
@@ -81,15 +84,217 @@
 }
 
 .portfolio {
-  padding-block: 30rem;
-  border: 1px solid salmon;
+  padding-block: 10rem;
+  color: $color-M-50;
+
+  &-cards,
+  &-repos {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 4rem;
+  }
+
+  &-repos {
+    margin-top: 7rem;
+    justify-items: center;
+  }
+
+  &-card {
+    width: 100%;
+    border: 2px solid $color-M-500;
+    border-radius: $radius-medium;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &_image {
+      width: 100%;
+      overflow: hidden;
+      border-top-left-radius: inherit;
+      border-top-right-radius: inherit;
+
+      position: relative;
+      flex: 1 1 0%;
+
+      img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+      }
+    }
+
+    &_content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding-inline: 1.5rem;
+      padding-bottom: 2rem;
+
+      h4 {
+        font-family: $font-heading;
+        text-transform: capitalize;
+      }
+
+      p {
+        flex-grow: 1;
+      }
+
+      &-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 1rem;
+      }
+    }
+  }
+
+  &-website {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &-website--flex {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    span:first-child {
+      color: $color-M-50;
+      align-self: flex-end;
+    }
+    span:last-child {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  &-repo {
+    font-size: 2rem;
+    transform: scale(1.5);
+    color: $color-M-500;
+    align-self: flex-end;
+  }
 }
 
-.message {
-  @include glass-gradient;
-  @include glass-gradient-to-bottom;
-  padding: 13rem 4rem;
+.cta {
+  @include glass-gradient-cta;
+  padding: 5rem 4rem;
   border-radius: $radius-medium;
 
+  color: $color-M-50;
+
   top: 10rem;
+
+  &-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+
+    @media (max-width: 37.5em) {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+    }
+
+    &_left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      > :nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      p {
+        font-size: 1.8rem;
+      }
+
+      .social-icons-container {
+        @media (max-width: 37.5em) {
+          display: none;
+        }
+      }
+    }
+
+    &_right {
+      .social-icons-container {
+        display: none;
+
+        @media (max-width: 37.5em) {
+          margin-top: 4rem;
+          width: 100%;
+          display: flex;
+
+          gap: 1rem;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  .form-group {
+    width: 100%;
+    margin-bottom: 2rem;
+
+    label {
+      display: block;
+      width: max-content;
+      transition: all 0.5s ease-out;
+
+      position: relative;
+      top: -3rem;
+    }
+
+    input,
+    textarea {
+      background-color: transparent;
+      font-family: $font-text;
+      outline: none;
+      border: none;
+      border-bottom: 2px solid $color-M-50;
+      width: 100%;
+      color: $color-M-50;
+      padding-bottom: 0.5rem;
+      font-size: 1.6rem;
+
+      &::placeholder {
+        color: transparent;
+      }
+
+      &:focus {
+        border-color: $color-M-500;
+        color: $color-M-500;
+
+        & + label {
+          color: $color-M-500;
+          top: 0;
+        }
+      }
+
+      &:focus,
+      &:not(:placeholder-shown) + label {
+        top: 0;
+      }
+      &:not(:placeholder-shown) {
+        color: $color-M-500;
+      }
+    }
+
+    textarea:not(:placeholder-shown) {
+      border-top: 2px solid;
+    }
+  }
+
+  form button:focus {
+    outline: 1px solid $color-M-500;
+    outline-offset: 2px;
+  }
 }
