@@ -1,5 +1,5 @@
-import CareerCards from '../_components/CareerCards';
-import { Akwaaba, WhatIDo } from '../_components/FirstInfoAssist';
+import CareerCards from "../_components/CareerCards";
+import { Akwaaba, WhatIDo } from "../_components/FirstInfoAssist";
 
 /* eslint-disable @next/next/no-img-element */
 function FirstInfo() {
@@ -12,14 +12,11 @@ function FirstInfo() {
 
             <div className="akwaaba-left-copy">
               <p>
-                Am Nigal Madebombe Samuel <strong>(Ssadiq Roy)</strong>,<br /> a professional Full-Stack web developer
-                and UI/UX designer with 3+ years of experience in the industry
+                Am Nigal Madebombe Samuel <strong>(Ssadiq Roy)</strong>,<br /> a professional Full-Stack web developer and UI/UX designer with 5+
+                years of experience in the industry
               </p>
 
-              <p>
-                I dedicate to build beautiful, fast and responsive web applications through carefully-crafted code and
-                user-centric design
-              </p>
+              <p>I dedicate to build beautiful, fast and responsive web applications through carefully-crafted code and user-centric design</p>
             </div>
           </div>
 
