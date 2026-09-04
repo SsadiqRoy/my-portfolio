@@ -26,7 +26,7 @@ function Portfolio() {
 
         <div className="portfolio-card">
           <div className="portfolio-card_image">
-            <img src="/the-distro-dashboard-light-alt.png" alt="The Wild Oasis Dashoard" />
+            <img src="/test-me.png" alt="The Wild Oasis Dashoard" />
           </div>
           <div className="portfolio-card_content">
             <h4>Test Me</h4>

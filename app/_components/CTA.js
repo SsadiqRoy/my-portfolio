@@ -1,6 +1,6 @@
-import { FaGithub, FaInstagram, FaLinkedinIn, FaWhatsapp, FaXTwitter } from 'react-icons/fa6';
-import CTAForm from './CTAForm';
-import Glass from './Glass';
+import { FaGithub, FaInstagram, FaLinkedinIn, FaWhatsapp, FaXTwitter } from "react-icons/fa6";
+import CTAForm from "./CTAForm";
+import Glass from "./Glass";
 
 function CTA() {
   return (
@@ -8,15 +8,12 @@ function CTA() {
       <div className="cta-grid">
         <div className="cta-grid_left">
           <div>
-            <h2 className="section-head-light">Let&apos;s Discuss Your Project</h2>
+            <h2 className="section-head-light">Let's Discuss Your Project</h2>
 
+            <p>I deliver high quality solutions through creative problem-solving focusing on performance and accessibility</p>
             <p>
-              I deliver high quality solutions through creative problem-solving focusing on performance and
-              accessibility
-            </p>
-            <p>
-              I build Secure, Scalable and High-Performance solutions tailored to meet project requirements from
-              designing, architecting and building to managing.
+              I build Secure, Scalable and High-Performance solutions tailored to meet project requirements from designing, architecting and building
+              to managing.
             </p>
           </div>
 

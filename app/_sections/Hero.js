@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import { FaXTwitter, FaWhatsapp, FaLinkedinIn, FaGithub, FaInstagram } from 'react-icons/fa6';
-import ClippedItem from '@/app/_components/ClippedItem';
+import { FaXTwitter, FaWhatsapp, FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa6";
+import ClippedItem from "@/app/_components/ClippedItem";
 
 function Hero() {
   return (
@@ -33,7 +33,7 @@ function Hero() {
           </h1>
 
           <div className="copy-descriptions">
-            <p>Let&apos;s Design and Build your website or web application beyond your imagination</p>
+            <p>Let's Design and Build your website or web application beyond your imagination</p>
             <p>A craft you would love 💖</p>
           </div>
 
