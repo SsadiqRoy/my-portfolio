@@ -33,7 +33,7 @@ function Hero() {
           </h1>
 
           <div className="copy-descriptions">
-            <p>Let's Design and Build your website or web application beyond your imagination</p>
+            <p>Let&apos;s Design and Build your website or web application beyond your imagination</p>
             <p>A craft you would love 💖</p>
           </div>
 
@@ -50,19 +50,19 @@ function Hero() {
 
         <div className="connect-icons">
           <div className="social-icons-container">
-            <a href="https://wa.me/message/XWNI33XLSKLNA1" className="social-icon">
+            <a target="_blank" href="https://wa.me/ssadiqroy" className="social-icon">
               <FaWhatsapp />
             </a>
-            <a href="https://x.com/SsadiqRoy" className="social-icon">
+            <a target="_blank" href="https://x.com/SsadiqRoy" className="social-icon">
               <FaXTwitter />
             </a>
-            <a href="https://www.linkedin.com/in/madebombe-samuel-nigal-3491251bb/" className="social-icon">
+            <a target="_blank" href="https://www.linkedin.com/in/samuel-nigal-3491251bb/" className="social-icon">
               <FaLinkedinIn />
             </a>
-            <a href="https://www.instagram.com/ssadiqroy" className="social-icon">
+            <a target="_blank" href="https://www.instagram.com/ssadiqroy" className="social-icon">
               <FaInstagram />
             </a>
-            <a href="https://github.com/SsadiqRoy" className="social-icon">
+            <a target="_blank" href="https://github.com/SsadiqRoy" className="social-icon">
               <FaGithub />
             </a>
           </div>

@@ -30,7 +30,7 @@ function Portfolio() {
           </div>
           <div className="portfolio-card_content">
             <h4>Test Me</h4>
-            <p>The Test Me app is simple quiz application that test a user's knowledge with multiple choice questions on topics.</p>
+            <p>The Test Me app is simple quiz application that test a user&apos;s knowledge with multiple choice questions on topics.</p>
             <div className="portfolio-card_content-buttons">
               <a target="_blank" href="https://the-distro.vercel.app/" className="btn-primary-alt btn-small portfolio-website">
                 visit site <FaArrowRight />
