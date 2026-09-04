@@ -1,4 +1,4 @@
-import { FaArrowRight, FaGithub } from "react-icons/fa6";
+import { FaArrowRight, FaFigma, FaGithub } from "react-icons/fa6";
 
 function Portfolio() {
   return (
@@ -32,7 +32,7 @@ function Portfolio() {
             <h4>Test Me</h4>
             <p>The Test Me app is simple quiz application that test a user&apos;s knowledge with multiple choice questions on topics.</p>
             <div className="portfolio-card_content-buttons">
-              <a target="_blank" href="https://the-distro.vercel.app/" className="btn-primary-alt btn-small portfolio-website">
+              <a target="_blank" href="https://sr-test-me.vercel.app/" className="btn-primary-alt btn-small portfolio-website">
                 visit site <FaArrowRight />
               </a>
               <a target="_blank" href="https://github.com/SsadiqRoy/test-me" className="portfolio-repo">
@@ -55,6 +55,105 @@ function Portfolio() {
               </a>
               <a target="_blank" href="https://github.com/SsadiqRoy/the-wild-oasis-dashboard" className="portfolio-repo">
                 <FaGithub />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="portfolio-card">
+          <div className="portfolio-card_image">
+            <img src="/opencook.png" alt="OpenCook Design" />
+          </div>
+          <div className="portfolio-card_content">
+            <h4>OpenCook</h4>
+            <p>OpenCook is a plaltform for various kinds of dishes accorss the world, where you can view or post how to cook a dish.</p>
+            <div className="portfolio-card_content-buttons">
+              <a
+                target="_blank"
+                href="https://www.figma.com/proto/3bWDxTLxd9JdeLxdUYpDrn?node-id=0-1&t=8Pc4GxNELFcsuOn8-6"
+                className="btn-primary-alt btn-small portfolio-website"
+              >
+                View Design <FaArrowRight />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.figma.com/proto/3bWDxTLxd9JdeLxdUYpDrn?node-id=0-1&t=8Pc4GxNELFcsuOn8-6"
+                className="portfolio-repo"
+              >
+                <FaFigma />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="portfolio-card">
+          <div className="portfolio-card_image">
+            <img src="/supaspace.png" alt="OpenCook Design" />
+          </div>
+          <div className="portfolio-card_content">
+            <h4>SupaSpace</h4>
+            <p>A real estate and hospitality platform where hosts can list spaces and guest can discover spaces and book, rent or buy</p>
+            <div className="portfolio-card_content-buttons">
+              <a
+                target="_blank"
+                href="https://www.figma.com/proto/1p66nHNiCoO0nY1tuGMW7u?node-id=1053-6824&t=8Pc4GxNELFcsuOn8-6"
+                className="btn-primary-alt btn-small portfolio-website"
+              >
+                View Design <FaArrowRight />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.figma.com/proto/1p66nHNiCoO0nY1tuGMW7u?node-id=1053-6824&t=8Pc4GxNELFcsuOn8-6"
+                className="portfolio-repo"
+              >
+                <FaFigma />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="portfolio-card">
+          <div className="portfolio-card_image">
+            <img src="/kirickin.png" alt="OpenCook Design" />
+          </div>
+          <div className="portfolio-card_content">
+            <h4>Kirickin</h4>
+            <p>An e-commerce platform for selling consumer goods. Clothing, tools, devices and any other.</p>
+            <div className="portfolio-card_content-buttons">
+              <a
+                target="_blank"
+                href="https://www.figma.com/proto/IMindDeotAIpld9AmnVvfg?node-id=61-2&t=8Pc4GxNELFcsuOn8-6"
+                className="btn-primary-alt btn-small portfolio-website"
+              >
+                View Design <FaArrowRight />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.figma.com/proto/IMindDeotAIpld9AmnVvfg?node-id=61-2&t=8Pc4GxNELFcsuOn8-6"
+                className="portfolio-repo"
+              >
+                <FaFigma />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="portfolio-card">
+          <div className="portfolio-card_image">
+            <img src="/vibrantfork.png" alt="OpenCook Design" />
+          </div>
+          <div className="portfolio-card_content">
+            <h4>Vibrant Fork</h4>
+            <p>An online service for a plant based meal business that to doorstep.</p>
+            <div className="portfolio-card_content-buttons">
+              <a target="_blank" href="https://vibrantfork.com" className="btn-primary-alt btn-small portfolio-website">
+                Visit Website <FaArrowRight />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.figma.com/proto/p9LRNQq8utHAeOgET4bfZ5?node-id=0-1&t=8Pc4GxNELFcsuOn8-6"
+                className="portfolio-repo"
+              >
+                <FaFigma />
               </a>
             </div>
           </div>
