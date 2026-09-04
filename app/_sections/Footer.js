@@ -40,7 +40,7 @@ function Footer() {
           </div>
 
           <div className="footer-bottom">
-            <p>Copyright &copy; 2024 Ssadiq Roy.</p>
+            <p>Copyright &copy; {new Date().getFullYear()} Ssadiq Roy.</p>
           </div>
         </div>
       </div>
