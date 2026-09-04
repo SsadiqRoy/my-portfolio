@@ -1,10 +1,11 @@
-import { CiServer } from 'react-icons/ci';
-import { FaCss3, FaFigma, FaFileCode, FaHtml5, FaNodeJs, FaReact, FaSass, FaTv } from 'react-icons/fa6';
-import { IoLogoJavascript } from 'react-icons/io5';
-import { RiNextjsFill } from 'react-icons/ri';
-import { SiMongodb, SiRedux, SiTailwindcss } from 'react-icons/si';
-import { TbBrandMysql } from 'react-icons/tb';
-import Glass from './Glass';
+import { CiServer } from "react-icons/ci";
+import { FaCss3, FaFigma, FaFileCode, FaHtml5, FaNodeJs, FaReact, FaSass, FaTv } from "react-icons/fa6";
+import { IoLogoJavascript } from "react-icons/io5";
+import { RiNextjsFill } from "react-icons/ri";
+import { SiKubernetes, SiMongodb, SiRedux, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { TbBrandMysql } from "react-icons/tb";
+import Glass from "./Glass";
+import { LiaDocker } from "react-icons/lia";
 
 function Skillset() {
   return (
@@ -21,12 +22,6 @@ function Skillset() {
           </span>
 
           <span className="stack-item">
-            <span className="stack-item-logo color-figma">
-              <FaFigma />
-            </span>
-            <span className="stack-item-name">UI/UX Design</span>
-          </span>
-          <span className="stack-item">
             <span className="stack-item-logo color-html">
               <FaTv />
             </span>
@@ -39,6 +34,12 @@ function Skillset() {
             </span>
             <span className="stack-item-name">back-end development</span>
           </span>
+          <span className="stack-item">
+            <span className="stack-item-logo color-figma">
+              <FaFigma />
+            </span>
+            <span className="stack-item-name">UI/UX Design</span>
+          </span>
         </div>
 
         <div className="stack-group">
@@ -46,27 +47,26 @@ function Skillset() {
             <span className="stack-item-logo color-node-js">
               <FaNodeJs />
             </span>
-            <span className="stack-item-name">nodeJs</span>
+            <span className="stack-item-name">Node.js</span>
+          </span>
+          <span className="stack-item">
+            <span className="stack-item-logo color-node-js">
+              <img src="bunjs.svg" alt="SR Webs Logo" className="BunJs" />
+            </span>
+            <span className="stack-item-name">Bun.js</span>
           </span>
 
           <span className="stack-item">
             <span className="stack-item-logo color-javascript">
               <IoLogoJavascript />
             </span>
-            <span className="stack-item-name">Javascript</span>
+            <span className="stack-item-name">JavaScript</span>
           </span>
-          <span className="stack-item">
-            <span className="stack-item-logo color-html">
-              <FaHtml5 />
-            </span>
-            <span className="stack-item-name">HTML</span>
-          </span>
-
           <span className="stack-item">
             <span className="stack-item-logo color-css">
-              <FaCss3 />
+              <SiTypescript />
             </span>
-            <span className="stack-item-name">CSS</span>
+            <span className="stack-item-name">TypeScript</span>
           </span>
 
           <span className="stack-item">
@@ -116,6 +116,34 @@ function Skillset() {
               <SiTailwindcss />
             </span>
             <span className="stack-item-name">tailwind</span>
+          </span>
+          <span className="stack-item">
+            <span className="stack-item-logo color-html">
+              <FaHtml5 />
+            </span>
+            <span className="stack-item-name">HTML</span>
+          </span>
+
+          <span className="stack-item">
+            <span className="stack-item-logo color-css">
+              <FaCss3 />
+            </span>
+            <span className="stack-item-name">CSS</span>
+          </span>
+        </div>
+
+        <div className="stack-group">
+          <span className="stack-item">
+            <span className="stack-item-logo color-tailwind">
+              <LiaDocker />
+            </span>
+            <span className="stack-item-name">Docker</span>
+          </span>
+          <span className="stack-item">
+            <span className="stack-item-logo color-css">
+              <SiKubernetes />
+            </span>
+            <span className="stack-item-name">Kubernetes</span>
           </span>
         </div>
       </div>
